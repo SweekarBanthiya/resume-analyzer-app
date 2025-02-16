@@ -8,6 +8,8 @@ import logging
 from dotenv import load_dotenv
 import uuid
 
+os.environ["GROQ_API_KEY"] = "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"
+
 try:
     load_dotenv()
 except:
@@ -78,7 +80,7 @@ st.markdown("""
 
 def initialize_groq_client():
     """Initialize and return Groq client"""
-    return Groq(api_key=os.getenv("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"))
+    return Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 def extract_text_from_pdf(pdf_file):
     """Extract text from uploaded PDF file"""
