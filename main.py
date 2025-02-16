@@ -78,7 +78,7 @@ st.markdown("""
 
 def initialize_groq_client():
     """Initialize and return Groq client"""
-    return Groq(api_key=os.environ.get("GROQ_API_KEY"))
+    return Groq(api_key=os.environ.get("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"))
 
 def extract_text_from_pdf(pdf_file):
     """Extract text from uploaded PDF file"""
